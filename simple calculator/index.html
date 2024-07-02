@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+
+</head>
+
+<body>
+ <a href="../index.html" style="font-size: 20px;"><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+
+    <div class="video">
+        <video autoplay muted loop id="bg-video">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="cal-body">
+        <div id="screen"></div>
+        <div id="all-buttons">
+            <button onClick="getValue('7')">7</button>
+            <button onClick="getValue('8')">8</button>
+            <button onClick="getValue('9')">9</button>
+            <button class="del" onClick="getValue('delete')">Del</button>
+            <button onClick="getValue('4')">4</button>
+            <button onClick="getValue('5')">5</button>
+            <button onClick="getValue('6')">6</button>
+            <button class="operator" onClick="getValue('/')">/</button>
+            <button onClick="getValue('1')">1</button>
+            <button onClick="getValue('2')">2</button>
+            <button onClick="getValue('3')">3</button>
+            <button class="operator" onClick="getValue('*')">*</button>
+            <button class="zero" onClick="getValue('0')">0</button>
+            <button onClick="getValue('.')">.</button>
+            <button class="operator" onClick="getValue('-')">-</button>
+            <button class="equal-sign" onClick="getValue('=')">=</button>
+            <button class="operator" onClick="getValue('+')">+</button>
+        </div>
+    </div>
+
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>

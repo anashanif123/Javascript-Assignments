@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="login_container" class="wrapper">
+    <div class="login-text">
+      <button class="cta"><i class="fas fa-chevron-down fa-1x"></i></button>
+      <div class="text">
+        <a href="">Login</a>
+        <hr>
+        <br>
+        <input id="email" type="email" placeholder="Email">
+        <br>
+        <input id="password" type="password" placeholder="Password">
+        <br>
+        <button onclick="loginUser()" class="login-btn">Log In</button>
+
+      </div>
+    </div>
+    <div class="call-text">
+      <h1>Show us your <span>creative</span> side</h1>
+    </div>
+
+  </div>
+  
+  <div style="font-size: 20px;font-family: sans-serif;" id="home_container">
+    <div class="bg-white ">
+      <div class="flex justify-between align-center p-10">
+        <h1>Welcome!<br />Add your notes to keep in mind</h1>
+        <span class="flex">
+          <p style="font-style: italic;" class="px-3" id="user_email"></p>
+          <button  onclick="logout()">Logout</button>
+          <!-- <button class="btn bg-blue-300   rounded text-white" onclick="logout()">Logout</button> -->
+        </span>
+      </div>
+    </div>
+    <div class="p-10">
+      <div>  
+        <textarea style="width: 900px;"  id="note" placeholder="Add your notes" class="border p-4 w-full bg-white" rows="5" ></textarea>
+        <div>
+          <select name="subject" id="subjectDropdown">
+            <option value="islamiat">isalmiat</option>
+            <option value="urdu">urdu</option>
+            <option value="english">english</option>
+            <option value="maths">maths</option>
+          </select>
+          <select name="category" id="category">
+            <option value="homeWork">Exam</option>
+            <option value="urdu"> Homework</option>
+            <option value="urdu"> Personal</option>
+            <option value="english">- Projects</option>
+            <option value="maths"> - Extracurricular Activities</option>
+          </select>
+          <button onclick="submitNote()" class="btn bg-blue-600 py-2 px-3 rounded text-white">Submit</button>
+          
+        </div>
+      </div>
+      <ul style="font-style: italic;" class="text-black" id="list"></ul>
+    </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

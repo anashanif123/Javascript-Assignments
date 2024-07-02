@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE GAME</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+  
+</head>
+<body>
+ <a href="../index.html" style="font-size: 20px;color: white;" ><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+
+    <center>
+    <div data-aos="zoom-in" data-aos-duration="1000"  class="main_container">
+    <h1  data-aos="zoom-in" data-aos-duration="1000">DICE GAME</h1>
+    <h2  id="message"></h2>
+    <div data-aos="flip-up" data-aos-duration="1000" class="container">
+        <div onclick="myLuck(1)"  class="box">1</div>
+        <div onclick="myLuck(2)" class="box">2</div>
+        <div onclick="myLuck(3)" class="box">3</div>
+        <div onclick="myLuck(4)" class="box">4</div>
+        <div onclick="myLuck(5)" class="box">5</div>
+        <div onclick="myLuck(6)" class="box">6</div>
+    </div>
+    <div data-aos="flip-up" data-aos-duration="1000" class="container">
+        <div class="info_box"> <b>User Number :</b> <span id="user_Number"> ---</span>  </div>
+        <div class="info_box"> <b>Random Number :</b> <span id="random_number">--</span> </div>
+        <div id="result_colour" class="info_box"> <b id="result">You Loss / Win</b></div>
+    </div>
+    <div data-aos="flip-up" data-aos-duration="1000" class="container">
+        <div class="info_box"> <b>Lives :</b> <span id="rounds">10</span> </div>
+        <div class="info_box"> <b>Win :</b><span id="win">0</span>   </div>
+        <div class="info_box"> <b>Loss :</b> <span id="loss">0</span>  </div>
+    </div> 
+</div>
+</center>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+     <script src="app.js"></script>
+</body>
+</html>

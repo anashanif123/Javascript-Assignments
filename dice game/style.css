@@ -1,0 +1,94 @@
+
+
+body{
+    font-family: fantasy;
+    margin: 0%;
+    padding: 0%;
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(68, 67, 67));
+   text-transform: capitalize;
+  
+}
+.main_container{
+    margin-top: 50px;
+    background-image: url(images/three-dice-with-bubble-background-vector.jpg);
+    background-size: cover;
+    background-position-y: center;
+    box-shadow:0px 5px 10px black;
+    height: 80vh;
+    width: 140vh;
+    border-radius: 100px;
+    
+
+}
+
+h1{
+    text-shadow: 3px 3px 8px white;
+    text-align: center;
+    font-size: 60px;
+    background: -webkit-linear-gradient(rgb(221, 221, 221), rgb(6, 146, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    
+    
+      
+}
+
+h2{
+     font-size: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin-top: 30px;
+    
+
+    
+}
+.box {
+    border-radius: 15px ;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15);
+    box-shadow: 4px 4px 7px black;
+    font-size: 70px;
+    cursor: pointer;
+    
+    
+    
+  }
+ 
+  .info_box {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 20px;
+    border: 5px solid black;
+    box-shadow: 4px 4px 7px black;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px ;
+  } 
+  .box:hover{
+    transform: scale(1.2);
+    background-color:#53AFEE;
+    border-radius: 30px ;
+    transition-duration: 0.5s;
+  }
+ 

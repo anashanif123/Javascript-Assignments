@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <a href="../index.html" style="font-size: 20px;color: white;"><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+
+    <h1 class="glow"  data-aos="fade-up" data-aos-duration="1000">TEXT EDITOR</h1>
+    <center>
+        <div class="editor-container">
+    <button id="bold"><i class="fa-solid fa-bold"></i></button>
+    <button id="italic"><i class="fa-solid fa-italic"></i></button>
+    <button id="underline"><i class="fa-solid fa-underline"></i></button>
+    <button id="fontsize"><i class="fas fa-text-height"></i></button>
+    <select name="fontsizees" id="sizes">
+        <option value="40px">40px</option>
+        <option value="60px">60px</option>
+        <option value="100px">100px</option>
+    </select>
+    <button id="fontfamily"><i class="fas fa-font"></i></button>
+    <select name="fontfamilies" id="fontfamilies">
+        <option value="Impact">Impact</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Ariel">Ariel</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value=" system-ui"> system-ui</option>
+        <option value="lemon">Lemon</option>
+    </select>
+    <input type="color" name="color" id="textcolor">
+    <button id="clear"><i class="fas fa-sync-alt"></i></button>
+    <br>
+    <br>
+    
+    <input id="inputs" type="text" placeholder="enter text">
+</div>
+</center>
+    <!-- javascript link -->
+    <script src="editor.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>

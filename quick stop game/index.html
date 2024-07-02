@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+
+</head>
+<body>
+ <a href="../index.html" style="font-size: 20px;color: white;"><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+
+    <center>
+        <h1 data-aos="fade-up" data-aos-delay="300" class="rules">GAME RULES</h1>
+        <ul data-aos="fade-up" data-aos-delay="300">
+            <li>1.You have to click  before 1000.</li>
+            <li>2.If number matches your number then you will win.</li>
+            <li>3.If it doesnt match then you are loss.</li>
+        </ul>
+        <div class="main_container">
+            <div class="first_container">
+                <h1 class="colors" >QUICK STOP</h1>
+                <h1 id="number">00</h1>
+    
+        <input type="text" placeholder="Input Number" id="userInput" maxlength="4">
+        
+        <h1 id="result"></h1>
+
+    <div class="second_container">
+       <button id="start_btn" onclick="start()">START</button> 
+       <button id="end_btn" onclick="stop()">STOP</button> 
+        
+    </div>
+</div>
+</center>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <a href="../index.html" style="font-size: 20px;color: white;"><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+
+    <center>
+        <div class="video">
+            <video autoplay muted loop id="bg-video">
+                <source src="./video/142575-780232326.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+     <!-- <h1  id="minute"> stop watch</h1> -->
+       <div class="first_container">
+         <h1 id="minute">00</h1><span>M</span>
+         <h1>:</h1>
+         <h1 id="second">00</h1><span>S</span>
+         <h1>:</h1>
+         
+         <h4 id="milisecond">00</h4><span>MS</span>
+        </div>
+         <div class="second_container">
+            <button class="start_bt" id="start_butn" onclick="start()" id="start">START</button>
+            <button class="stop_bt" id="stop_butn" onclick="stop()" id="stop">STOP</button>
+            <button class="reset_bt" id="reset_butn" onclick="reset()" id="reset">Reset</button>
+
+         </div>
+    </div>
+</center>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+ <a href="../index.html" style="font-size: 20px;"><i class="fa-solid fa-circle-arrow-left"></i>back</a>
+  <center>
+    <h1 style="font-family: lemon; text-decoration: underline; text-shadow:0px 0px 20px; ">Attendance PORTAL</h1>
+    <div class="head">
+    </div>   
+        <div class="cards">
+        <div class="card">
+           
+            <h1 class="pehla">Present</h1>
+        
+            <p id="presentCount">00</p>
+           
+          </div>
+          <div class="card">
+            
+            <h1 class="dusra">Absent</h1>
+            
+            <p id="absentCount">00</p>
+           
+          </div>
+          <div class="card">
+          
+            <h1 class="tesra">Leave</h1>
+            <p id="leaveCount">00</p>
+          </div>
+        </div>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Roll No</th>
+                <th>Age</th>
+                <th colspan="3">checker</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+  </center>
+    <script src="app.js"></script>
+</body>
+</html>

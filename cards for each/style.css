@@ -1,0 +1,70 @@
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .animal-card {
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animal-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .animal-card .card-content {
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animal-card:hover .card-content {
+    transform: translateY(0);
+  }
+  
+  .animal-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .animal-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .animal-card p {
+    margin-bottom: 1rem;
+  }
+  
+  .animal-card button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .animal-card button:hover {
+    background-color: #3e8e41;
+  }

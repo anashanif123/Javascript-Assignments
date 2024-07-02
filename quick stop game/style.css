@@ -1,0 +1,125 @@
+@font-face {
+    font-family:lemon ;
+    src: url(font/Lemon-Regular.ttf);
+}
+@font-face {
+    font-family:digital ;
+    src: url(font/digital-7\ \(italic\).ttf);
+}
+body{
+    background-image: url(images/photo-1518895312237-a9e23508077d\ \(1\).avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: lemon;
+    color: white;
+}
+.colors{
+  color: white;
+    /* background: -webkit-linear-gradient(black,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+    text-shadow:0px 0px 10px #ec0442; */
+}
+.first_container{
+    margin-top: 20px;
+    height: 70vh;
+    width: 40vw;
+    border-radius: 80px;
+    border: 2px solid #8E0227;
+    box-shadow:0px 0px 10px #8E0227;
+      
+  
+}
+.second_container{
+  
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#number{
+   
+    color: white;
+    font-family: digital;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#userInput{
+    
+    color: white;
+    font-size: 30px; 
+    background-color: white;
+    height:40px;
+    width: 20vw;
+    border-radius: 100px;
+}
+
+   button{
+       
+       background: none;
+       color: white;
+       height: 90px;
+       width: 90px;
+       border-radius: 50px;
+       font-family:lemon;
+       font-size: 20px;
+       
+       
+    } 
+    #start_btn{
+        border-style:dashed;
+        color:green;
+    }
+    
+    #end_btn{
+        border-style:dashed;
+        color:red;
+    }
+    #start_btn:hover{
+      cursor: pointer;
+      border:2px solid green;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    background: -webkit-linear-gradient(green , white);
+    color: green;
+}
+  #end_btn:hover{
+    cursor: pointer;
+    border:2px solid red;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color:red;
+    background: -webkit-linear-gradient(red , white);
+  }
+
+  ul{
+
+    list-style: none;
+    color: white;
+    font-size: 23px;
+    text-decoration: white underline;
+    
+  }
+  .rules{
+   color: white;
+    font-size: 26px;
+    text-decoration:white underline;
+    
+
+  }
+  .colors{
+   color: white;
+    text-decoration: white underline ;
+  }
+  button:hover::before {
+    transform: rotate(-90deg) scaleX(0.8) scaleY(1.30);
+  }

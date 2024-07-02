@@ -1,0 +1,44 @@
+@font-face {
+  font-family: lemon;
+  src: url(Lemon-Regular.ttf);
+}
+*{
+  color: white;
+}
+body{
+  font-family: lemon;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgHEI0DruNZ60CEmeSVHFrFr7LW55gCYdaw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+p{
+  color: white;
+  text-decoration: underline;
+  text-shadow: 2px 2px 20px white;
+  font-style: italic;
+  font-size: 30px;
+}
+#heading{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 2px 2px 20px white;
+  font-style: italic;
+
+}
+#divone{
+  cursor: pointer;
+}
+#divone:hover{
+  
+  transform: scale(1.05);
+  transition-duration: 1s;
+  
+}
+#heelo{
+  
+}

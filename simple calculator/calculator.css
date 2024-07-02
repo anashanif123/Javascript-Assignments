@@ -1,0 +1,129 @@
+@font-face {
+    font-family: radio;
+    src: url(font/digital-7\ \(mono\ italic\).ttf);
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-size: 22px;
+
+}
+
+#cal-body {
+
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    background-color: rgba(0, 0, 0, 0.342);
+    box-shadow: 0px 0px 30px black;
+}
+
+#screen {
+    box-shadow: 0px 0px 30px black;
+
+    background-color: rgba(255, 255, 255);
+    color: black;
+    font-size: 3em;
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    margin-top: 35px;
+    padding-right: 10px;
+    text-align: right;
+    overflow-x: scroll;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#screen::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+}
+
+#screen::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 30px;
+}
+
+#all-buttons {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    margin-top: 70px;
+    color: black;
+}
+
+.del {
+    color: black;
+    background-color: rgba(250, 44, 44, 0.411);
+}
+
+.del:hover {
+    background-color: red;
+
+
+}
+
+.operator {
+    color: black;
+    box-shadow: 0px 0px 10px black;
+}
+
+.equal-sign {
+    color: black;
+    grid-column: 1 / span 3;
+    border-radius: 100px;
+    background-color: rgba(53, 152, 245, 0.178);
+}
+
+.equal-sign:hover {
+    background-color: rgba(0, 132, 255);
+
+}
+
+.zero {
+    grid-column: 1 / span 2;
+    border-radius: 100px;
+}
+
+button {
+    font-family: radio;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 100px;
+    border: 2px solid black;
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.342);
+    margin-top: -10px;
+
+
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255);
+    transform: scale(1.1);
+
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: linear-gradient(to top, black, gray);
+}
